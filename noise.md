@@ -5,21 +5,21 @@ source: https://www.airwindows.com/ditherfloat/
 
 Rust:
 ```rust
-pub struct FastRng {
+pub struct XOrShift32Rng {
   fpd: u32,
 }
 
-impl Default for FastRng {
-  fn default() -> FastRng {
-    FastRng { fpd: 17 }
+impl Default for XOrShift32Rng {
+  fn default() -> XOrShift32Rng {
+    XOrShift32Rng { fpd: 17 }
   }
 }
 
-impl FastRng {
-  pub fn new(mut seed: u32) -> FastRng {
+impl XOrShift32Rng {
+  pub fn new(mut seed: u32) -> XOrShift32Rng {
     // seed cannot be zero
     if seed == 0 { seed = 17; }
-    FastRng { fpd: seed }
+    XOrShift32Rng { fpd: seed }
   }
   
   #[inline]
