@@ -1,4 +1,4 @@
-## xorshift32
+## xorshift32 RNG
 license: Public Domain
 
 source: https://www.airwindows.com/ditherfloat/
