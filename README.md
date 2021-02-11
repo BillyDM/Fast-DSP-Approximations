@@ -1,4 +1,4 @@
-# Fast-DSP-Approximations
+# Fast DSP Approximations
 
 This is a compilation of public domain algorithms for fast approximations of expensive calculations, useful for DSP applications.
 
