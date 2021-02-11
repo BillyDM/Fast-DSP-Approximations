@@ -6,7 +6,7 @@ by Raph Levien and adpated by William Light
 C:
 ```c
 inline static float
-shape_tanh_levien(const float x)
+tanh_levien(const float x)
 {
     const float x2 = x * x;
     const float x3 = x2 * x;
