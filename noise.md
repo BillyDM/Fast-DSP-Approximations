@@ -1,4 +1,6 @@
 ## xorshift32
+license: Public Domain
+
 source: https://www.airwindows.com/ditherfloat/
 
 Rust:
