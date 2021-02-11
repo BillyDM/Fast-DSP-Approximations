@@ -27,16 +27,17 @@ impl XOrShift32Rng {
     self.fpd ^= self.fpd << 13;
     self.fpd ^= self.fpd >> 17;
     self.fpd ^= self.fpd << 5;
+    self.fpd
   }
   
   #[inline]
   pub fn gen_f32(&mut self) -> f32 {
-    self.gen_u32() as f32 / std::u32::MAX as f32;
+    self.gen_u32() as f32 / std::u32::MAX as f32
   }
   
   #[inline]
   pub fn gen_f64(&mut self) -> f64 {
-    self.gen_u32() as f64 / std::u32::MAX as f64;
+    self.gen_u32() as f64 / std::u32::MAX as f64
   }
 }
 ```
