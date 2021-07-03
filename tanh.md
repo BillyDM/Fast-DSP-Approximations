@@ -19,3 +19,19 @@ tanh_levien(const float x)
     return a / sqrtf(1.f + (a * a));
 }
 ```
+
+Rust:
+```rust
+#[inline]
+pub fn tanh_levien(x: f32) -> f32 {
+    let x2 = x * x;
+    let x3 = x2 * x;
+    let x5 = x3 * x2;
+    
+    let a = x
+        + (0.16489087 * x3)
+        + (0.00985468 * x5);
+    
+    a / (1.0 + (a * a)).sqrt()
+}
+```
