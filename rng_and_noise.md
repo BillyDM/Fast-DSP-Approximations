@@ -34,7 +34,7 @@ impl XOrShift32Rng {
   /// Generates a random `f32` in the range `[-1.0, 1.0]`
   #[inline]
   pub fn gen_f32(&mut self) -> f32 {
-    f32::from(self.gen_i32()) / f32::from(std::i32::MAX)
+    self.gen_i32() as f32 / std::i32::MAX as f32
   }
   
   /// Generates a random `f64` in the range `[-1.0, 1.0]`
@@ -46,7 +46,7 @@ impl XOrShift32Rng {
   /// Generates a random `f32` in the range `[0.0, 1.0]`
   #[inline]
   pub fn gen_f32_normalized(&mut self) -> f32 {
-    (f32::from(self.gen_i32()) / (2.0 * f32::from(std::i32::MAX))) + 0.5
+    (self.gen_i32() as f32 / (2.0 * std::i32::MAX as f32)) + 0.5
   }
   
   /// Generates a random `f64` in the range `[0.0, 1.0]`
