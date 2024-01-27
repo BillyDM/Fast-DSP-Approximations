@@ -1,7 +1,6 @@
-## Levien tanh approximation
-license: Public Domain
-
-by Raph Levien and adpated by William Light
+# Levien tanh approximation
+* license: Public Domain
+* by Raph Levien and adpated by William Light
 
 C:
 ```c
