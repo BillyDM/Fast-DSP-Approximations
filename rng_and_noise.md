@@ -36,7 +36,7 @@ public:
   }
 
   // Generates a random float in the range `[-1.0, 1.0]`
-  inline double gen_noise_float() {
+  inline float gen_noise_float() {
     return static_cast<float>( this->gen_uint32() ) * (2.0f / 4294967295.0f) - 1.0f;
   }
 
